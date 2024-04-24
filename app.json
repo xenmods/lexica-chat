@@ -1,10 +1,9 @@
 {
   "expo": {
-    "name": "test-app",
+    "name": "Lexica",
     "slug": "test-app",
     "version": "1.0.0",
-
-    "scheme": "test-app",
+    "scheme": "lexica",
     "web": {
       "bundler": "metro",
       "output": "static",
@@ -13,17 +12,15 @@
     "plugins": ["expo-router"],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/robot.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
@@ -31,8 +28,17 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.xenmods.lexica"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "dfe14ac1-371c-40d2-a768-0558c72881e3"
       }
     }
   }
